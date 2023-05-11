@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/f2-common.css">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/swiper.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/614007/swiper.jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+</head>
+<body class="pt-0">
+    <section class="fixed w-full overflow-hidden ">
+    <!---nav bar-->
+        <nav class="relative h-14 select-none bg-grey lg:flex lg:items-stretch w-full bg-white">
+            <div class="flex flex-no-shrink items-stretch h-14">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img class="pl-10"  src="https://flowbite.com/docs/images/logo.svg" class=" mr-3" alt="Flowbite Logo">
+                    <span class="py-2 px-4 text-black flex items-center font-extrabold text-lg mr-96">Gameport</span>
+                </a>
+                <a href="#" class="flex-no-grow flex-no-shrink relative ml-24 py-2 px-8 leading-normal text-black no-underline flex items-center hover:text-blue-600 ">Home</a>
+                <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-8 leading-normal text-black no-underline flex items-center hover:text-blue-600 ">Games</a>
+                <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-8 leading-normal text-black no-underline flex items-center hover:text-blue-600 ">Products</a>
+                <a href="#" class="flex-no-grow flex-no-shrink relative py-2 px-8 leading-normal text-black no-underline flex items-center hover:text-blue-600 ">Contact</a>
+            </div>
+            <div class="lg:flex lg:items-stretch lg:flex-no-shrink lg:flex-grow">
+              <div class="lg:flex lg:items-stretch lg:justify-end ml-auto">
+                <div class="flex md:order-2">
+                    
+                    <div class="relative hidden md:block">
+                      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg class="w-5 h-5 text-black" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Search icon</span>
+                      </div>
+                      <input type="text" id="search-navbar" class="block mt-2 w-full  pl-10 text-sm text-black border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search...">
+                </div>
+              </div>
+            </div>
+            <div class="flex ml-2 py-2 ">
+                <button type="button" onclick="window.location.href = 'login.html';" class="text-white bg-blue-700  hover:bg-blue-400 focus:ring-4  font-medium rounded-lg text-sm px-4 py-0 text-center mr-3 ">Sign up</button>
+            </div>
+          </nav>
+              
+    </section>
+
+    
+    <!--carousell-->
+    <section class="bg-white pt-14">
+        <div class="sliderAx  ">
+            <div id="slider-1" class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
+              <div class="bg-cover" style="height: 70vh; width: 99vw; background-image: url(https://sm.ign.com/ign_nordic/gallery/h/horizon-fo/horizon-forbidden-west-screenshots_n6pv.jpg)">
+                <div class="shadows"></div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <h1 class=" text-6xl font-bold text-white ">HORIZON FORBIDDEN WEST</h1>
+                  <button type="button" class="ml-1 mt-3 text-black bg-white border border-white font-semibold hover:bg-blue-600 hover:text-white hover:border-blue-600 transition ease-in-out duration-300 focus:ring-gray-300  rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Buy now</button>
+                  
+                </div>
+            </div> <!-- container -->
+            <br>
+            </div>
+      
+            <div id="slider-2" class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+              <div class="bg-cover  " style="height: 70vh; width: 99vw; background-image: url(https://i.ytimg.com/vi/qIQ3xNqkVC4/maxresdefault.jpg)">
+                <div class="shadows"></div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <h1 class=" text-6xl font-bold text-white ">SPIDERMAN-2</h1>
+                  <button type="button" class="ml-1 mt-3 text-black bg-white border border-white font-semibold hover:bg-blue-600 hover:text-white hover:border-blue-600 transition ease-in-out duration-300 focus:ring-gray-300  rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Pre-order now</button>
+                  
+                </div>
+              </div><!-- container -->
+            <br>
+            </div>
+
+            <div id="slider-3" class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
+                <div class="bg-cover" style="height: 70vh; width:99vw; background-image: url(https://i.ytimg.com/vi/YuHGPoa67so/maxresdefault.jpg)">
+                  <div class="shadows"></div>
+                <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                  <h1 class=" text-6xl font-bold text-white ">GENSHIN IMPACT</h1>
+                  <button type="button" class="ml-1 mt-3 text-black bg-white border border-white font-semibold hover:bg-blue-600 hover:text-white hover:border-blue-600 transition ease-in-out duration-300 focus:ring-gray-300  rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Buy now</button>
+                  
+                </div>
+              </div> <!-- container -->
+              <br>
+              </div>
+
+        </div>
+       
+    </section>
+    <section class="bg-white pt-7 pl-28">
+     <!---sliders--->
+            <div class="grid grid-cols-3 ml-40">
+                
+                <div class="w-60 h-36 bg-black border border-gray-600 rounded-lg shadow">
+                  <button id="sButton1" onclick="sliderButton1()">
+                       <img class="rounded-t-lg" src="https://sm.ign.com/ign_nordic/gallery/h/horizon-fo/horizon-forbidden-west-screenshots_n6pv.jpg" alt="" />
+                  </button>
+                </div>
+
+                <div class="w-60 h-36 bg-black border border-gray-600 rounded-lg shadow">
+                    <button id="sButton2" onclick="sliderButton2()">
+                         <img class="rounded-t-lg" src="https://i.ytimg.com/vi/qIQ3xNqkVC4/maxresdefault.jpg" alt="" />
+                    </button>
+                </div>
+
+                <div class="w-60 h-36 bg-black border border-gray-600 rounded-lg shadow">
+                    <button id="sButton3" onclick="sliderButton3()">
+                         <img class="rounded-t-lg" src="https://i.ytimg.com/vi/YuHGPoa67so/maxresdefault.jpg" alt="" />
+                    </button>
+                </div>
+
+
+            </div>
+    </section>
+    <!--productss-->
+    <section class="pt-28 bg-white">
+
+      <div id="product-1" class="grid grid-cols-1 gap-8 mt-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-6/12 rounded ">
+                <img class="pl-32 w-4/5 h-4/6 rounded-xl" src="https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-horizontal-product-shot-01-ps5-en-23nov20?$2400px--t$" alt="">
+            </div>
+            <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                <h2 class="pt-20 text-5xl font-bold leading-tight text-black">Gameport 2</h2>
+                <p class="leading-tight pl-1 pt-2 text-black">Experience an all-new generation of incredible Gameport.</p>
+                <button type="button" class="ml-1 mt-3 text-black border border-black hover:bg-black hover:text-white transition ease-in-out duration-300 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read More</button>
+            </div>
+        </div> 
+      </div> 
+      
+      
+      <div id="product-2" class="grid grid-cols-1 gap-8 mt-10 pb-48">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-6/12 rounded pr-36">
+                <img class="pl-36 w-full h-full rounded-xl" src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-collection-image-block-01-en-01sep22?$2400px$" alt="">
+            </div>
+            <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                <h2 class="pt-20 text-5xl font-bold leading-tight text-black">Gameport 2</h2>
+                <p class="leading-tight pl-1 pt-2 text-black">Experience an all-new generation of incredible Gameport.</p>
+                <button type="button" class="ml-1 mt-3 text-black border border-black hover:bg-black hover:text-white transition ease-in-out duration-300 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read More</button>
+            </div>
+        </div> 
+      </div> 
+
+
+      <div id="product-3" class="grid grid-cols-1 gap-8 mt-10 pb-48">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-6/12 rounded ">
+                <img class="pl-36 w-full h-full rounded-xl pr-28" src="https://gmedia.playstation.com/is/image/SIEPDC/3d-pulse-headset-range-image-block-03-en-13sep22?$2400px$" alt="">
+            </div>
+            <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                <h2 class="pt-20 text-5xl font-bold leading-tight text-black">Gameport 2</h2>
+                <p class="leading-tight pl-1 pt-2 text-black">Experience an all-new generation of incredible Gameport.</p>
+                <button type="button" class="ml-1 mt-3 text-black border border-black hover:bg-black hover:text-white transition ease-in-out duration-300 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read More</button>
+            </div>
+        </div> 
+      </div> 
+
+      <div id="product-4" class="grid grid-cols-1 gap-8 mt-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-6/12 rounded ">
+                <img class="pl-32 w-4/5 h-4/6 rounded-xl " src="https://gmedia.playstation.com/is/image/SIEPDC/Media-Remote-square-image-block-ps5-01-en-09oct20?$1200px--t$" alt="">
+            </div>
+            <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                <h2 class="pt-20 text-5xl font-bold leading-tight text-black">Gameport 2</h2>
+                <p class="leading-tight pl-1 pt-2 text-black">Experience an all-new generation of incredible Gameport.</p>
+                <button type="button" class="ml-1 mt-3 text-black border border-black hover:bg-black hover:text-white transition ease-in-out duration-300 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read More</button>
+            </div>
+        </div> 
+      </div> 
+
+
+      <div id="product-5" class="grid grid-cols-1 gap-8 mt-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-6/12 rounded ">
+                <img class="pl-32 w-4/5 h-4/6 rounded-xl" src="https://gmedia.playstation.com/is/image/SIEPDC/hd-camera-square-image-block-ps5-01-en-07dec20?$1200px$" alt="">
+            </div>
+            <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                <h2 class="pt-20 text-5xl font-bold leading-tight text-black">Gameport 2</h2>
+                <p class="leading-tight pl-1 pt-2 text-black">Experience an all-new generation of incredible Gameport.</p>
+                <button type="button" class="ml-1 mt-3 text-black border border-black hover:bg-black hover:text-white transition ease-in-out duration-300 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read Gameport 2
+            </div>
+        </div> 
+      </div> 
+
+
+    </section>
+
+    <section class="bg-white pb-28">
+      <!---sliders--->
+            <div class="grid grid-cols-5 gap-5 ml-24">
+                 
+                <div class="w-60 h-36 bg-white border bordewhite00 rounded-lg shadow">
+                   <button id="pButton1" onclick="productButton1()">
+                        <img class="rounded-t-lg h-36 w-60" src="https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-horizontal-product-shot-01-ps5-en-23nov20?$2400px--t$" alt="" />
+                   </button>
+                   <div class="p-3 bg-white">
+                    <a href="#">
+                        <p class="font-semibold tracking-tight text-black">GP2 Console</p>
+                    </a>
+                   </div> 
+                </div>
+ 
+                <div class="w-60 h-36 bg-white border border-white rounded-lg shadow">
+                     <button id="pButton2" onclick="productButton2()">
+                          <img class="rounded-t-lg h-36 w-60" src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-collection-image-block-01-en-01sep22?$1200px$" alt="" />
+                     </button>
+                     <div class="p-3 bg-white">
+                      <a href="#">
+                          <p class="font-semibold tracking-tight text-black">DualSense Controller</p>
+                      </a>
+                     </div>
+                </div>
+ 
+                <div class="w-60 h-36 bg-white border border-white rounded-lg shadow">
+                     <button id="pButton3" onclick="productButton3()">
+                          <img class="rounded-t-lg h-36 w-60" src="https://gmedia.playstation.com/is/image/SIEPDC/3d-pulse-headset-range-image-block-03-en-13sep22?$1200px$" alt="" />
+                     </button>
+                     <div class="p-3 bg-white">
+                      <a href="#">
+                          <p class="font-semibold tracking-tight text-black">PULSE3D Headset</p>
+                      </a>
+                     </div>
+                </div>
+
+                <div class="w-60 h-36 bg-white border bordewhite00 rounded-lg shadow">
+                  <button id="pButton4" onclick="productButton4()">
+                       <img class="rounded-t-lg h-36 w-60" src="https://gmedia.playstation.com/is/image/SIEPDC/Media-Remote-square-image-block-ps5-01-en-09oct20?$1200px--t$" alt="" />
+                  </button>
+                  <div class="p-3 bg-white">
+                    <a href="#">
+                        <p class="font-semibold tracking-tight text-black">Media Remote</p>
+                    </a>
+                   </div>
+                </div>
+
+                <div class="w-60 h-36 bg-white border bordewhite00 rounded-lg shadow">
+                  <button id="pButton5" onclick="productButton5()">
+                       <img class="rounded-t-lg h-36 w-60" src="https://gmedia.playstation.com/is/image/SIEPDC/hd-camera-square-image-block-ps5-01-en-07dec20?$1200px$" alt="" />
+                  </button>
+                  <div class="p-3 bg-white">
+                    <a href="#">
+                        <p class="font-semibold tracking-tight text-black">HD Camera</p>
+                    </a>
+                   </div>
+                </div>
+    
+ 
+            </div>
+     </section>
+
+      <!--cards-->
+    <section  style="background-size: cover ;background-repeat: no-repeat; background-image: url('https://i.ytimg.com/vi/LO8MqX0-stM/maxresdefault.jpg');">     
+      <div  class="w-full md:w-6/12 mt-4 md:mt-0 md:pl-48 bg-gradient-to-b from-transparent to-black">
+          <h2 class="pt-20 text-5xl font-bold leading-tight text-white">THIS MONTH <br>ON GAMEPORT</h2>
+          <p class="leading-tight pl-1 pt-4 font-semibold text-white">Check out this month's biggest releases along with dedicated<br> features, guides and more.</p>
+          <button type="button" class=" mt-5 text-white border border-white hover:bg-white hover:text-black transition ease-in-out duration-300 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Read More</button>
+      </div> 
+
+<div class="bg-black">
+      <div class="grid grid-cols-3 pl-48 pt-10">
+          
+        <div class="w-96 h-56 bg-black border border-gray-600 rounded-lg shadow hover:scale-110 ease-in-out duration-150">
+          <button id="" onclick="">
+               <img class="rounded-t-lg " src="https://sm.ign.com/ign_nordic/gallery/h/horizon-fo/horizon-forbidden-west-screenshots_n6pv.jpg" alt="" />
+          </button>
+        </div>
+
+        <div class="w-96 h-56 bg-black border border-gray-600 rounded-lg shadow hover:scale-110 ease-in-out duration-150">
+            <button id="" onclick="">
+                 <img class="rounded-t-lg" src="https://i.ytimg.com/vi/qIQ3xNqkVC4/maxresdefault.jpg" alt="" />
+            </button>
+        </div>
+
+        <div class="w-96 h-56 bg-black border border-gray-600 rounded-lg shadow hover:scale-110 ease-in-out duration-150">
+            <button id="" onclick="">
+                 <img class="rounded-t-lg" src="https://i.ytimg.com/vi/YuHGPoa67so/maxresdefault.jpg" alt="" />
+            </button>
+        </div>
+      </div>
+
+
+      <div class="grid grid-cols-3 pl-48 mt-5 pb-10">
+          
+        <div class="text-left">
+          <a class="text-white font-bold text-lg">
+               <h3>The best modern remakes<br> on GP1 and GP2.</h3>
+          </a>
+        </div>
+
+        <div class="text-left">
+          <a class="text-white font-bold text-lg">
+               <h3>Your guide to Gameport Tournaments<br> and esports</h3>
+          </a>
+        </div>
+
+        <div class="text-left">
+          <a class="text-white font-bold text-lg">
+               <h3>Best open world games<br> in GP1 and GP2</h3>
+          </a>
+        </div>
+      </div>
+</div>
+       
+
+
+</section>
+
+
+   <section>
+
+     <h1 class="text-center pt-3 pb-3 text-6xl font-bold">OUR TOP GAMES OF THE MONTH</h1>
+
+   </section>
+
+  <!--cards sliderr-->
+   <section class="expandingCards mt-0">
+
+    
+  
+    <div class="slide active">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/street-fighter-6-demo-keyart-01-en-19apr23?$1200px$" alt="">
+       
+    </div>
+    <div class="slide">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/dead-island-keyart-01-en-22nov22?$1200px$" alt="">
+        
+    </div>
+    <div class="slide">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-listing-thumb-01-09sep21$en?$1200px$" alt="">
+        
+    </div>
+    <div class="slide">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/Horizon-Burning-Shores-keyart-01-23feb23$en?$1200px$" alt="">
+        
+    </div>
+    
+
+   </section> 
+
+
+<!--cards-->
+
+<section class="bg-slate-400 " style="background-size: cover ;background-repeat: no-repeat; background-image: url('');">     
+  <div  class="w-full md:w-6/12 mt-4 md:mt-0  text-center ">
+      <h2 class="pt-20 text-5xl font-bold leading-tight text-black">GAMEPORT PLUS</h2>
+      <p class="leading-tight  pt-4 font-semibold text-black">TAKE ON THE WORGAMEPORT PLUS PLUS</p>
+  </div> 
+
+<div class="">
+  <div class="grid grid-cols-3 pl-48 pt-10">
+      
+    <div class="w-96 h-56 rounded-lg hover:scale-110 ease-in-out duration-150">
+      <button id="" onclick="">
+           <img class="rounded-lg " src="https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-premium-plan-thumbnail-01-12may22$en-in?$1600px$" alt="" />
+      </button>
+    </div>
+
+    <div class="w-96 h-56 rounded-lg hover:scale-110 ease-in-out duration-150">
+        <button id="" onclick="">
+             <img class="rounded-lg" src="https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-extra-plan-thumbnail-01-12may22$en?$1600px$" alt="" />
+        </button>
+    </div>
+
+    <div class="w-96 h-56 rounded-lg hover:scale-110 ease-in-out duration-150">
+        <button id="" onclick="">
+             <img class="rounded-lg" src="https://gmedia.playstation.com/is/image/SIEPDC/ps-plus-essential-plan-thumbnail-01-12may22$en?$1600px$" alt="" />
+        </button>
+    </div>
+  </div>
+
+
+  <div class="grid grid-cols-3 pl-48 pt-5 mt-44 pb-10">
+      
+    <div class="text-left">
+      <a class="text-black font-thin text-3xl">
+           <h3>GAMEPORT PLUS Premium</h3>
+      </a>
+    </div>
+
+    <div class="text-left">
+      <a class="text-black font-thin text-3xl">
+           <h3>GAMEPORT PLUS Extra</h3>
+      </a>
+    </div>
+
+    <div class="text-left">
+      <a class="text-black font-thin text-3xl">
+           <h3>GAMEPORT PLUS Premium</h3>
+      </a>
+    </div>
+  </div>
+</div>
+   
+</section>
+     
+   
+     
+<!--footer--->
+   <h1 class="flex justify-center pl-5 font-bold pt-9"> Follow us on Social Media</h1>
+   
+   <section class="footer pt-24 pb-24">
+  
+     
+    
+
+      <ul class="footerUl">
+        <li>
+          <a class="facebook " href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="google" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+
+
+
+     
+
+
+   </section>
+
+     
+
+  <section class="bg-blue-400">
+
+
+
+    <div class="relative mt-16 bg-deep-purple-accent-400">
+      <svg class=" text-blue-600 absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400" preserveAspectRatio="none" viewBox="0 0 1440 54">
+        <path fill="currentColor" d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"></path>
+      </svg>
+      <div class="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+          <div class="md:max-w-md lg:col-span-2">
+            <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+              <svg class=" text-black w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                <rect x="3" y="1" width="7" height="12"></rect>
+                <rect x="3" y="17" width="7" height="6"></rect>
+                <rect x="14" y="1" width="7" height="6"></rect>
+                <rect x="14" y="11" width="7" height="12"></rect>
+              </svg>
+              <span class="ml-2 text-xl font-bold tracking-wide text-black uppercase">Gameport</span>
+            </a>
+            <div class="mt-4 lg:max-w-sm">
+              <p class="text-sm text-black font-thin">
+                All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+            <div>
+              <p class="font-semibold tracking-wide text-teal-accent-400">
+                ABOUT
+              </p>
+              <ul class="mt-2 space-y-2">
+                <p>
+                  <a href="/" class="text-black font-thin">News</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">World</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Games</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">References</a>
+                </p>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold tracking-wide text-teal-accent-400">PRODUCTS</p>
+              <ul class="mt-2 space-y-2">
+                <p>
+                  <a href="/" class="text-black font-thin">Web</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">eCommerce</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Business</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Entertainment</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Portfolio</a>
+                </p>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold tracking-wide text-teal-accent-400">SUPPORT</p>
+              <ul class="mt-2 space-y-2">
+                <p>
+                  <a href="/" class="text-black font-thin">Media</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Brochure</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Nonprofit</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Educational</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Projects</a>
+                </p>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold tracking-wide text-teal-accent-400">
+                BUISNESS
+              </p>
+              <ul class="mt-2 space-y-2">
+                <p>
+                  <a href="/" class="text-black font-thin">Infopreneur</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Personal</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Wiki</a>
+                </p>
+                <p>
+                  <a href="/" class="text-black font-thin">Forum</a>
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
+          <p class="text-sm text-black">
+            © Copyright 2023 Prassanna. All rights reserved.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section> 
+
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
